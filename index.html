@@ -620,7 +620,7 @@
       <div class="s1-eyebrow">Point of View</div>
       <div class="s1-title">Building AI-Ready<br /><span>Data Foundations</span></div>
       <div class="s1-divider"></div>
-      <div class="s1-subtitle">The next wave of enterprise AI requires data that is both machine-readable and human-interpretable.</div>
+      <div class="s1-subtitle">The next wave of enterprise AI requires data that is both machine-interpretable and human-readable.</div>
       <div class="s1-footer">Blend360 &nbsp;|&nbsp; Verizon</div>
     </div>
   </div>
@@ -632,7 +632,7 @@
     <div class="top-bar"></div>
     <div class="slide-inner">
       <div class="slide-label">Situation</div>
-      <div class="slide-title">Enterprise data was built for human consumption It must now evolve to support both human and <span class="accent">machine interaction.</span></div>
+      <div class="slide-title">Enterprise data was built for human consumption. It must now evolve to support both human and <span class="accent">machine interaction.</span></div>
       <div class="fill grid-2x2">
         <div class="situation-card">
           <div class="card-label">01: The Current State</div>
@@ -690,13 +690,13 @@
               <td class="col-layer"><span class="layer-num">L1</span>Data Ingestion &amp; Storage</td>
               <td class="col-def">Collects raw data from all enterprise sources (network events, billing records, call logs, CRM updates) and stores it durably across structured, semi-structured, and unstructured formats for downstream use.</td>
               <td class="col-output">Collects and stores all data types at scale for downstream use</td>
-              <td class="col-example">Network events, billing records, and call logs ingested into a unified data lake</td>
+              <td class="col-example">Ongoing Teradata EDW migration to GCP</td>
             </tr>
             <tr>
               <td class="col-layer"><span class="layer-num">L2</span>Data Quality &amp; Governance</td>
               <td class="col-def">Validates, monitors, and enforces policy on data at ingestion: masking PII, flagging CPNI records, tracking completeness, so downstream consumers inherit accurate, compliant data without additional checks.</td>
               <td class="col-output">Ensures data is accurate, fresh, and compliant at the source</td>
-              <td class="col-example">Automated quality checks on customer account data; CPNI and PII policies enforced at ingestion</td>
+              <td class="col-example">Some data quality checks exist, metrics definitions inconsistent across the organization, metadata mgmt (SSOT) varies across systems </td>
             </tr>
             <tr>
               <td class="col-layer"><span class="layer-num">L3</span>Context &amp; Knowledge Layer</td>
@@ -709,14 +709,14 @@
               <td class="col-layer"><span class="layer-num" style="background:var(--teal);color:#0d1117">L4</span>Data Products</td>
               <td class="col-def">Packages governed data into self-describing units with explicit contracts: schemas, versioned APIs, freshness SLAs, and quality guarantees, replacing ad hoc queries with reliable, discoverable interfaces.</td>
               <td class="col-output">Packages data for reliable, governed consumption with clear contracts</td>
-              <td class="col-example">"Customer Payment Behavior" data product with schema, freshness guarantee, and access contract</td>
+              <td class="col-example">Includes data assets, data products, agentic data products (e.g., event ledger, contextIQ, propensity models)</td>
             </tr>
             <tr>
               <td class="group-empty"></td>
               <td class="col-layer"><span class="layer-num" style="background:var(--teal);color:#0d1117">L5</span>Agents (Data &amp; AI)</td>
               <td class="col-def">Autonomous systems that retrieve, reason over, and act on data products to complete tasks by dynamically selecting sources and composing workflows rather than running fixed queries.</td>
               <td class="col-output">Executes tasks and decisions using data products autonomously</td>
-              <td class="col-example">Retention agent autonomously queries payment and usage data to generate next-best-action recommendations</td>
+              <td class="col-example">Inclusive of all in-flight agent development and ideation (e.g., billing data agent) </td>
             </tr>
             <tr>
               <td class="group-empty"></td>
